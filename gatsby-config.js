@@ -13,24 +13,24 @@ module.exports = {
         id: process.env.GTAG,
       },
     },
-    // {
-    //   resolve: `gatsby-plugin-google-gtag`,
-    //   options: {
+    {
+      resolve: `gatsby-plugin-google-gtag`,
+      options: {
 
-    //     trackingIds: [
-    //       process.env.GA4,
-    //     ],
+        trackingIds: [
+          process.env.GA4,
+        ],
 
-    //     gtagConfig: {
-    //       optimize_id: process.env.GTAG,
-    //       anonymize_ip: true,
-    //     },
+        gtagConfig: {
+          optimize_id: process.env.GTAG,
+          anonymize_ip: true,
+        },
 
-    //     pluginConfig: {
-    //       head: true,
-    //     },
-    //   },
-    // },
+        pluginConfig: {
+          head: true,
+        },
+      },
+    },
     "gatsby-plugin-react-helmet",
     "gatsby-plugin-sitemap",
   ],
